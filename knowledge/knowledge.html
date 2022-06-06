@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrel portfolio</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header start -->
+        <header>
+
+            <div class="user">
+                <img src="../images/Profile Picture.jpeg" alt="">
+                <h3 class="name">Farrel Razka</h3>
+                <p class="post">Student of SMK 1 Cianjur</p>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../knowledge/knowledge.html">Knowledge</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../hobby/hobby.html">Hobby</a></li>
+                    <li><a href="../social media/socialmedia.html">Social Media</a></li>
+                    <li><a href="../tutorial/tutorial.html">Tutorial</a></li>
+                    <li><a href="../schedule/schedule.html">Schedule</a></li>
+                    <li><a href="../address/address.html">Address</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    <!-- header end -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- Knowledge section starts -->
+
+    <section class="knowledge" id="knowledge">
+
+    <h1 class="heading"> my <span>knowledge</span>  </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2010</span>
+                <h3>Pre-school</h3>
+                <p><b>RA Al Barkah</b> <br> Jl. K. H. Hasyim Ashari Gg. Al-Barkah No.817, 
+                    Solokpandan, Kec. Cianjur, Kabupaten Cianjur</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2012</span>
+                <h3>Sekolah Dasar</h3>
+                <p><b>SD Negeri Ibu Jenab 4</b> <br> Pangeran Hidayatullah, 
+                    Limbangansari, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43211</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2018</span>
+                <h3>Sekolah Menengah Pertama</h3>
+                <p><b>SMP Pasundan Cianjur</b> <br> Jalan Mokhamad Ali No.66, Solokpandan, 
+                    Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43214</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2021</span>
+                <h3>Sekolah Menengah Kejuruan</h3>
+                <p><b>SMK Negeri 1 Cianjur</b> <br> Jl. Siliwangi No.41, Sawah Gede, 
+                    Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43212</p>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- Knowledge section starts -->
+
+
+
+        <!-- jquery cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <!-- js file link -->
+        <script src="script.js"></script>
+
+        <!-- Google Sheet Form -->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxl9kK6H8felwMdgtNFYzdGKB9NOxcr3nvXIwu15hjGqC1Dn2coymOqd5-DaAeLZdCpIA/exec'
+            const form = document.forms['rel-contact-form']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>

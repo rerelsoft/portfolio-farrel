@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrel portfolio</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header start -->
+        <header>
+
+            <div class="user">
+                <img src="../images/Profile Picture.jpeg" alt="">
+                <h3 class="name">Farrel Razka</h3>
+                <p class="post">Student of SMK 1 Cianjur</p>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../knowledge/knowledge.html">Knowledge</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../hobby/hobby.html">Hobby</a></li>
+                    <li><a href="../social media/socialmedia.html">Social Media</a></li>
+                    <li><a href="../tutorial/tutorial.html">Tutorial</a></li>
+                    <li><a href="../schedule/schedule.html">Schedule</a></li>
+                    <li><a href="../address/address.html">Address</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    <!-- header end -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- address section starts -->
+
+<h1 class="heading"> school <span>address</span>  </h1>
+
+    <div class="map-wrapper">
+        <iframe class="googlemap" 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15846.127057379374!2d107.1365878!3d-6.8266561!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a4020b1836d1a1d!2sSMK%20Negeri%201%20Cianjur!5e0!3m2!1sen!2sid!4v1653590351424!5m2!1sen!2sid" 
+        width="600" height="450" style="border:0;" 
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+<!-- address section ends -->
+
+
+
+
+
+
+        <!-- jquery cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <!-- js file link -->
+        <script src="script.js"></script>
+
+        <!-- Google Sheet Form -->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxl9kK6H8felwMdgtNFYzdGKB9NOxcr3nvXIwu15hjGqC1Dn2coymOqd5-DaAeLZdCpIA/exec'
+            const form = document.forms['rel-contact-form']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>

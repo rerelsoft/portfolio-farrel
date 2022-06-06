@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrel portfolio</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header start -->
+        <header>
+
+            <div class="user">
+                <img src="../images/Profile Picture.jpeg" alt="">
+                <h3 class="name">Farrel Razka</h3>
+                <p class="post">Student of SMK 1 Cianjur</p>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../knowledge/knowledge.html">Knowledge</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../hobby/hobby.html">Hobby</a></li>
+                    <li><a href="../social media/socialmedia.html">Social Media</a></li>
+                    <li><a href="../tutorial/tutorial.html">Tutorial</a></li>
+                    <li><a href="../schedule/schedule.html">Schedule</a></li>
+                    <li><a href="../address/address.html">Address</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    <!-- header end -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- about section start -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>about</span> me </h1>
+
+<div class="row">
+
+    <div class="info">
+        <h3> <span> name : </span> M Farrel Razka Atallah </h3>
+        <h3> <span> age : </span> 16 </h3>
+        <h3> <span> country : </span> Indonesia </h3>
+        <h3> <span> language : </span> Sundanese </h3>
+        <h3> <span> programming language : </span> HTML, CSS, JS </h3>
+        <a href="./doc/Portfolio About Me.docx"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+    </div>
+
+    <div class="counter">
+
+        <div class="box">
+            <span>09</span>
+            <h3>of attendance 32 student</h3>
+        </div>
+
+        <div class="box">
+            <span>10+</span>
+            <h3>month of experience</h3>
+        </div>
+
+        <div class="box">
+            <span>50+</span>
+            <h3>project practice completed</h3>
+        </div>
+
+        <div class="box">
+            <span>390cpm</span>
+            <h3>records of typing</h3>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+
+
+        <!-- jquery cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <!-- js file link -->
+        <script src="script.js"></script>
+
+        <!-- Google Sheet Form -->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxl9kK6H8felwMdgtNFYzdGKB9NOxcr3nvXIwu15hjGqC1Dn2coymOqd5-DaAeLZdCpIA/exec'
+            const form = document.forms['rel-contact-form']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>

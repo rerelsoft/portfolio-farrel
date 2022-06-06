@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrel portfolio</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header start -->
+        <header>
+
+            <div class="user">
+                <img src="../images/Profile Picture.jpeg" alt="">
+                <h3 class="name">Farrel Razka</h3>
+                <p class="post">Student of SMK 1 Cianjur</p>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../knowledge/knowledge.html">Knowledge</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../hobby/hobby.html">Hobby</a></li>
+                    <li><a href="../social media/socialmedia.html">Social Media</a></li>
+                    <li><a href="../tutorial/tutorial.html">Tutorial</a></li>
+                    <li><a href="../schedule/schedule.html">Schedule</a></li>
+                    <li><a href="../address/address.html">Address</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    <!-- header end -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+    
+    <h3>Hello Mate !</h3>
+    <h1>I'M <span>Farrel Razka</span></h1>
+    <p>Seorang siswa di sekolah menengah kejuruan</p>
+    <a href="../about/about.html"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- footer section starts -->
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="../home/home.html">Home</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../knowledge/knowledge.html">Knowledge</a></li>
+                        <li><a href="../gallery/gallery.html">Gallery</a></li>
+                        <li><a href="../hobby/hobby.html">Hobby</a></li>
+                        <li><a href="../social media/socialmedia.html">Social Media</a></li>
+                        <li><a href="../tutorial/tutorial.html">Tutorial</a></li>
+                        <li><a href="../schedule/schedule.html">Schedule</a></li>
+                        <li><a href="../address/address.html">Address</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/farrel.razka.9/">Facebook</a></li>
+                        <li><a href="https://twitter.com/reltrain">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/farrelrazka/">Instagram</a></li>
+                        <li><a href="ttps://github.com/rerelsoft">Github</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCsnufZjPcxdOPNC1yOPjZDw">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li><a href="#">Jl. Siliwangi No.41, Sawah Gede, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43212</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+<!-- footer section ends -->
+
+
+
+
+        <!-- jquery cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <!-- js file link -->
+        <script src="script.js"></script>
+
+        <!-- Google Sheet Form -->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxl9kK6H8felwMdgtNFYzdGKB9NOxcr3nvXIwu15hjGqC1Dn2coymOqd5-DaAeLZdCpIA/exec'
+            const form = document.forms['rel-contact-form']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>
